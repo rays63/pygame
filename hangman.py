@@ -9,7 +9,7 @@ def get_words(Word):
 
 
 
-def play():
+def hangman():
     play = True
     while play == True:
         word = get_words(Words)
@@ -59,4 +59,4 @@ def play():
     
 
 if __name__ == '__main__':
-    play()
+    hangman()
