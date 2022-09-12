@@ -7,8 +7,6 @@ def get_words(Word):
     word = random.choice(Word)
     return word.upper()
 
-
-
 def hangman():
     play = True
     while play == True:
@@ -56,7 +54,5 @@ def hangman():
             play = True
         else:
             play = False
-    
 
-if __name__ == '__main__':
-    hangman()
+            
