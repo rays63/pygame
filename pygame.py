@@ -9,9 +9,10 @@ def main():
     What would you like to play :
     1. Hangman
     2. Wordle
-    3. tic tac toe
+    3. Tic tac toe
+    X. exit
             """)
-        ans = input("Enter a value : ")
+        ans = input("Enter a value : ").upper()
 
         match ans:
             case "1":
@@ -29,8 +30,13 @@ def main():
                 if main_back == "YES":
                    continue
                 else:
-                    break
-
-
+                    main_menu = False
+            case "3":
+                print('This game is still under development!!! please chose another game !')
+                continue
+            case "X":
+                break
+    print("Thank you for playing! \n")
+            
 if __name__ == '__main__':
     main()
