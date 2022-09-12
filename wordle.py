@@ -2,7 +2,7 @@ import random
 import rich
 from rich.prompt import Prompt
 from rich.console import Console
-from Words import words
+from words import Words
 
 
 def get_words(word):
@@ -55,13 +55,13 @@ def wordle():
     tries = 6
 
     console = Console()
-    answer = get_words(words)
+    answer = get_words(Words)
 
     while tries != 0:
         tries = tries - 1
         user_inp = Prompt.ask("Enter your Guess ").upper()
 
-        while verifyWord(user_inp, words):
+        while verifyWord(user_inp, Words):
             console.print('Enter a valid five letter word!')
             user_inp = Prompt.ask("Enter your Guess ").upper()
 
@@ -77,6 +77,3 @@ def wordle():
     if tries == 0 and user_inp != answer:
         console.print("Sorry wrong guess. The correct word is " + correct_place(answer))
 
-
-if __name__ == '__main__':
-    wordle()
