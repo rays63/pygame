@@ -20,7 +20,8 @@ def main():
                 main_back = input(
                     "Would you like to go back to the main menu (yes or no) : ").upper()
                 if main_back == "YES":
-                   continue
+                    print("\033c")
+                    continue
                 else:
                     break
             case "2":
@@ -28,7 +29,8 @@ def main():
                 main_back = input(
                     "Would you like to go back to the main menu (yes or no) : ").upper()
                 if main_back == "YES":
-                   continue
+                    print("\033c")
+                    continue
                 else:
                     main_menu = False
             case "3":
