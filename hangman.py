@@ -16,6 +16,8 @@ def hangman():
         used_letters = set()
         lives = 7
 
+        print("Welcome to HangMan")
+
         while len(word_letter) > 0  and lives >0:
             print('You have ', lives, 'lives left. ','You have used these letters : ', ' '.join(used_letters))
             print(hang[lives])
